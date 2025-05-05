@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv"><i class="fa-solid fa-book-bookmark"></i>
+            <div class="logo"> <a href="#">Study Notes Hub</a></div>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Subjects</a></li>
+                <li><a href="#">Help</a></li>
+                <button><a href="#">SignIn</a></button>
+                <button><a href="#">SignUp</a></button>
+            </ul>
+        </div>
+    </nav>
+    <div class="notes">
+        <div class="note item">
+            <i class="fa-solid fa-book"></i>
+            <button class="btn"><a href="#">Physics Notes</a></button>
+            <!-- <p class="note">Physics Notes</p> -->
+        </div>
+
+        <div class="note item">
+            <i class="fa-solid fa-book"></i>
+            <!-- <p class="note">Chemistry Notes</p> -->
+            <button class="btn"><a href="#">Chemistry Notes</a></button>
+
+        </div>
+
+        <div class="note item">
+            <i class="fa-solid fa-book"></i>
+            <!-- <p class="note">Mathematics Notes</p> -->
+            <button class="btn"><a href="#">Mathematics Notes</a></button>
+
+        </div>
+
+    </div>
+
+    <div class="about-section">
+        
+                <section id="about" class="about-section">
+    <div class="about-container">
+        <h2>About Study Notes Hub</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Mission</h3>
+                <p>At Study Notes Hub, we're dedicated to making quality education accessible to all students. We believe that well-organized study materials can make learning more effective and enjoyable.</p>
+                
+                <h3>What We Offer</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Comprehensive notes for core subjects</li>
+                    <li><i class="fas fa-check-circle"></i> Peer-reviewed study materials</li>
+                    <li><i class="fas fa-check-circle"></i> Easy-to-download resources</li>
+                    <li><i class="fas fa-check-circle"></i> A platform to share your own notes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* About Section Styles */
+    .about-section {
+        background-color: #d1deea;
+        padding: 80px 0;
+        margin: 40px 0;
+        text-align: center; /* Added for center alignment */
+    }
+    
+    .about-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .about-container h2 {
+        text-align: center;
+        color: #4a6baf;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    
+    .about-container h2:after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: #4a6baf;
+        margin: 15px auto;
+    }
+    
+    .about-content {
+        display: flex;
+        justify-content: center; /* Center the content */
+        flex-wrap: wrap;
+    }
+    
+    .about-text {
+        max-width: 800px; /* Limit width for better readability */
+        margin: 0 auto; /* Center the text block */
+    }
+    
+    .about-text h3 {
+        color: #4a6baf;
+        margin: 25px 0 15px;
+        font-size: 1.5rem;
+    }
+    
+    .about-text p {
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 15px;
+    }
+    
+    .about-text ul {
+        list-style: none;
+        padding: 0;
+        display: inline-block; /* Center the list */
+        text-align: left; /* Left-align list items */
+    }
+    
+    .about-text li {
+        margin-bottom: 10px;
+        line-height: 1.6;
+        color: #555;
+    }
+    
+    .about-text i {
+        color: #4a6baf;
+        margin-right: 10px;
+    }
+    
+    @media (max-width: 768px) {
+        .about-container h2 {
+            font-size: 2rem;
+        }
+        
+        .about-text ul {
+            text-align: center; /* Center list items on mobile */
+        }
+        
+        .about-text li {
+            text-align: left; /* Keep bullet content aligned */
+            display: flex;
+            align-items: center;
+        }
+    }
+</style>
+               
+    </div>
+        <div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        /* Physics Notes Container */
+        .physics-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .physics-container h1 {
+            color: #4a6baf;
+            margin-bottom: 30px;
+        }
+        
+        /* Options Container */
+        .options-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .option-card {
+            background: #f0f4f8;
+            padding: 30px;
+            border-radius: 8px;
+            width: 250px;
+            transition: transform 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            border-color: #4a6baf;
+        }
+        
+        .option-card i {
+            font-size: 2.5rem;
+            color: #4a6baf;
+            margin-bottom: 15px;
+        }
+        
+        .option-card h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .option-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #4a6baf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .back-btn:hover {
+            background: #3a5a9f;
+        }
+    </style>
+
+    <div class="physics-container">
+        <h1><i class="fa-solid fa-atom"></i> Physics Notes</h1>
+        <p>Choose an option below to continue:</p>
+        
+        <div class="options-container">
+            <div class="option-card">
+                <i class="fa-solid fa-plus"></i>
+                <h2>Add Notes</h2>
+                <p>Contribute your own physics notes to help other students</p>
+            </div>
+            
+            <div class="option-card" >
+                <i class="fa-solid fa-download"></i>
+                <h2>Download Notes</h2>
+                <p>Access our collection of physics notes for your studies</p>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Subjects</a>
+    </div>
+    </div>
+    <div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        /* Chemistry Notes Container */
+        .chemistry-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .chemistry-container h1 {
+            color: #4a6baf;
+            margin-bottom: 30px;
+        }
+        
+        /* Options Container */
+        .options-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .option-card {
+            background: #f0f4f8;
+            padding: 30px;
+            border-radius: 8px;
+            width: 250px;
+            transition: transform 0.3s;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            border-color: #4a6baf;
+        }
+        
+        .option-card i {
+            font-size: 2.5rem;
+            color: #4a6baf;
+            margin-bottom: 15px;
+        }
+        
+        .option-card h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .option-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #4a6baf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .back-btn:hover {
+            background: #3a5a9f;
+        }
+    </style>
+
+    <div class="chemistry-container">
+        <h1><i class="fa-solid fa-flask"></i> Chemistry Notes</h1>
+        <p>Choose an option below to continue:</p>
+        
+        <div class="options-container">
+            <div class="option-card" >
+                <i class="fa-solid fa-plus"></i>
+                <h2>Add Notes</h2>
+                <p>Contribute your own chemistry notes to help other students</p>
+            </div>
+            
+            <div class="option-card">
+                <i class="fa-solid fa-download"></i>
+                <h2>Download Notes</h2>
+                <p>Access our collection of chemistry notes for your studies</p>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Subjects</a>
+    </div>
+    </div>
+    <div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        /* Math Notes Container */
+        .math-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .math-container h1 {
+            color: #4a6baf;
+            margin-bottom: 30px;
+        }
+        
+        /* Options Container */
+        .options-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .option-card {
+            background: #f0f4f8;
+            padding: 30px;
+            border-radius: 8px;
+            width: 250px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            border-color: #4a6baf;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .option-card i {
+            font-size: 2.5rem;
+            color: #4a6baf;
+            margin-bottom: 15px;
+        }
+        
+        .option-card h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .option-card p {
+            color: #666;
+            line-height: 1.5;
+            font-size: 0.9rem;
+        }
+        
+        /* Back Button */
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #4a6baf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .back-btn:hover {
+            background: #3a5a9f;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .options-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .math-container {
+                padding: 20px;
+            }
+        }
+    </style>
+
+    <div class="math-container">
+        <h1><i class="fa-solid fa-square-root-variable"></i> Mathematics Notes</h1>
+        <p>Select an option to access mathematics resources:</p>
+        
+        <div class="options-container">
+            <div class="option-card" >
+                <i class="fa-solid fa-plus"></i>
+                <h2>Add Notes</h2>
+                <p>Contribute your mathematics notes, formulas, and problem solutions</p>
+            </div>
+            
+            <div class="option-card" >
+                <i class="fa-solid fa-download"></i>
+                <h2>Download Notes</h2>
+                <p>Access our complete collection of mathematics study materials</p>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i> Back to All Subjects
+        </a>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Study Notes Hub</h3>
+                <p>Your premier destination for quality educational resources</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> contact@studynoteshub.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education St, Learning City</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Subjects</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Study Notes Hub. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <style>
+        /* Footer Styles */
+        footer {
+            background-color: #141719;
+            color: #ecf0f1;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+        
+        .footer-section h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-section p, .footer-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .footer-section i {
+            margin-right: 10px;
+            color: #3498db;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #3498db;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            margin-top: 20px;
+        }
+        
+        .social-links {
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            color: #ecf0f1;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #3498db;
+        }
+        
+        @media (max-width: 600px) {
+            .footer-section {
+                flex: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+
+</html>
